@@ -11,7 +11,7 @@
 </head>
 <body>
     
-     <header>
+     <header class="container mx-auto">
         <div class="navbar bg-red-600">
             <div class="flex-1">
               <a class="btn btn-ghost btn-circle ">
@@ -53,7 +53,7 @@
             </div>
           </div>
 
-          <section class="container mx-auto">
+          <section >
             <div class="flex flex-row justify-between items-center px-9 py-7">
                 <div>
                     <p class="text-6xl text-black font-extrabold">Let's Travels</p>
@@ -69,8 +69,70 @@
             
           </section>
      </header>
-     <main>
-        
+     <main class="container mx-auto ">
+        <div class="flex flex-row justify-between gap-52">
+            <section class="space-y-4 w-1/2 border border-red-600">
+                <div class="card card-side bg-base-100 shadow-xl w-2/3 px-10 py-5">
+                    <figure>
+                      <img
+                        src="./images/images1.jfif"
+                        alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Cox's Bazar</h2>
+                      <p>Cost: <span>300</span>$</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl w-2/3 px-10 py-5">
+                    <figure>
+                      <img
+                        src="./images/images1.jfif"
+                        alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rangamati</h2>
+                      <p>Cost: <span>300</span>$</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl w-2/3 px-10 py-5">
+                    <figure>
+                      <img
+                        src="./images/images1.jfif"
+                        alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span>300</span>$</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+    
+            <section class="w-1/2">
+                <p class="text-center">Cart</p>
+                <hr>
+                <p class="text-center">Total_Cost: <span>0</span>$</p>
+                <div class="flex flex-row justify-evenly gap-5">
+                    <button class="bg-slate-700">Bus+100</button>
+                    <button class="bg-slate-700">train-100</button>
+                    <button class="bg-slate-700">Taxi-200</button>
+                </div>
+                <hr>
+                <p class="text-center">Grand_Total: <span>0</span>$</p>
+                
+            </section>
+        </div>
+       
+       
+
      </main>
     <script src="app.js></script>
 </body>
