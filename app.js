@@ -1,6 +1,4 @@
-// function handleselect(){
-//     console.log("Boss select korsi");
-// }
+
 
 const allbtn=document.getElementsByClassName("all-btn");
 let count=0;
@@ -8,6 +6,9 @@ let count=0;
 for(const btn of allbtn){
     btn.addEventListener("click",function(e){
         count=count+1;
+
+        console.log(e.target.parentNode.childNodes[1].innerText);
+
         setInnerText("cart_count",count);
         
 })
