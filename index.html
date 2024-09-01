@@ -80,7 +80,7 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title">Cox's Bazar</h2>
-                      <p>Cost: <span>300</span>$</p>
+                      <p>Cost: <span class="price">300</span>$</p>
                         <button class="all-btn btn btn-primary">Add to Cart</button>
                      
                     </div>
@@ -93,7 +93,7 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title">Rangamati</h2>
-                      <p>Cost: <span>300</span>$</p>
+                      <p>Cost: <span class="price">300</span>$</p>
                       
                         <button class="all-btn btn btn-primary">Add to Cart</button>
                       
@@ -107,7 +107,9 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title">Shajek</h2>
-                      <p>Cost: <span>300</span>$</p>
+                      <p>Cost: 
+                        <span class="price">
+                          300</span>$</p>
                       
                         <button class="all-btn btn btn-primary">Add to Cart</button>
                 
@@ -118,6 +120,11 @@
             <section class="w-1/2">
                 <p class="text-center">Cart</p>
                 <hr>
+                <ul
+                id="selected-place-container"
+                class="selected-place-container">
+
+                </ul>
                 <p class="text-center">Total_Cost: <span>0</span>$</p>
                 <div class="flex flex-row justify-evenly gap-5">
                     <button class="bg-slate-700">Bus+100</button>
