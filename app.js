@@ -8,9 +8,14 @@ let count=0;
 for(const btn of allbtn){
     btn.addEventListener("click",function(e){
         count=count+1;
-        document.getElementById('cart_count').innerText=count;
+        setInnerText("cart_count",count);
         
 })
+}
+
+function setInnerText(id,value){
+    document.getElementById(id).innerText=value;
+
 }
 
 
