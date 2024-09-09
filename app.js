@@ -2,10 +2,17 @@ const allbtn=document.getElementsByClassName("all-btn");
 let count=0;
 
  for(const btn of allbtn){
-    btn.addEventListener("click",function(){
+    btn.addEventListener("click",function(e){
       count=count+1;
+      const placeName=e.target.parentNode.childNodes[1].innerText;
+      const cost=e.target.parentNode.childNodes[3].childNodes[1].innerText;
 
-         
+      
+    
+
+
+
+      
       setInnertext("cart_count",count);
         
     })
