@@ -7,7 +7,16 @@ let count=0;
       const placeName=e.target.parentNode.childNodes[1].innerText;
       const cost=e.target.parentNode.childNodes[3].childNodes[1].innerText;
 
+      const selectedContainer=document.getElementById("selected-place-container");
+      const li=document.createElement(li);
+
+      const p1=document.createElement(p);
+      const p2=document.createElement(p);
+
       
+
+
+
     
 
 
