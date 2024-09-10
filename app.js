@@ -20,7 +20,7 @@ let count=0;
       selectedContainer.appendChild(li);
 
           COST("Total_costs",parseInt(cost));
-          COST("grand-total",parseInt(cost));
+          grandtotal("grand-total",parseInt(cost));
 
       setInnertext("cart_count",count);
         
@@ -35,6 +35,12 @@ let count=0;
   setInnertext(id,sum);
  }
 
+
+ function grandtotal(){
+  const grand_cost=document.getElementById("Total_costs").innerText;
+  const convertedgrandcost=parseInt(grand_cost);
+  setInnertext("grand-total",convertedgrandcost);
+ }
 
 
  function setInnertext(id,value){
