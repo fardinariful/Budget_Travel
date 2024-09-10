@@ -21,8 +21,20 @@ let count=0;
       li.appendChild(p2);
       selectedContainer.appendChild(li);
 
+      const budgets=document.getElementById("Total_budget").innerText;
+      const convertedbudgets= parseInt(budgets);
+
+      if((convertedbudgets-parseInt(cost))<0){
+        alert("low budget earn more");
+        return;
+      }
+
+      document.getElementById("Total_budget").innerText=convertedbudgets-parseInt(cost);
+
+      
+
           COST("Total_costs",parseInt(cost));
-          grandtotal("grand-total",parseInt(cost));
+          grandtotal();
 
       setInnertext("cart_count",count);
         
