@@ -19,25 +19,23 @@ let count=0;
       li.appendChild(p2);
       selectedContainer.appendChild(li);
 
-      //console.log(document.getElementById("Total_costs").innerText);
-      const total_cost=document.getElementById("Total_costs").innerText;
-      const convertedtotalcost1=parseInt(total_cost);
-      const sum1=convertedtotalcost1+parseInt(cost);
+          COST("Total_costs",parseInt(cost));
+          COST("grand-total",parseInt(cost));
 
-
-      const grand_cost=document.getElementById("grand-total").innerText;
-      const convertedtotalcost2=parseInt(grand_cost);
-      const sum2=convertedtotalcost2+parseInt(cost);
-      
-
-
-
-      setInnertext("grand-total",sum2);
-      setInnertext("Total_costs",sum1);
       setInnertext("cart_count",count);
         
     })
  }
+
+
+ function COST(id,value){
+  const total_cost=document.getElementById(id).innerText;
+  const convertedtotalcost=parseInt(total_cost);
+  const sum=convertedtotalcost+value;
+  setInnertext(id,sum);
+ }
+
+
 
  function setInnertext(id,value){
    document.getElementById(id).innerText=value;
