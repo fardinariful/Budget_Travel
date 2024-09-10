@@ -9,7 +9,9 @@ let count=0;
 
       const selectedContainer=document.getElementById("selected-place-container");
       const li=document.createElement("li");
-
+      li.style.display="flex";
+      li.style.flexDirection="row";
+      li.style.gap="10px";
       const p1=document.createElement("p");
       p1.innerText=placeName;
       const p2=document.createElement("p");
@@ -36,10 +38,24 @@ let count=0;
  }
 
 
- function grandtotal(){
+ function grandtotal(category){
   const grand_cost=document.getElementById("Total_costs").innerText;
   const convertedgrandcost=parseInt(grand_cost);
-  setInnertext("grand-total",convertedgrandcost);
+  if(category=="bus")
+  {
+    setInnertext("grand-total",convertedgrandcost+100);
+  }
+  else if(category=="train")
+  {
+    setInnertext("grand-total",convertedgrandcost-100);
+  }
+  else if(category=="Taxi")
+    {
+      setInnertext("grand-total",convertedgrandcost-200);
+    }
+  else{
+    setInnertext("grand-total",convertedgrandcost);
+  }
  }
 
 
